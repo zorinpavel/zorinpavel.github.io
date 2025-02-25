@@ -11,8 +11,10 @@
     "preview": "vite preview --open --https --port 4000 --strictPort",
     "tsc": "tsc",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "scss": "stylelint src/**/*.scss"
+    "scss": "stylelint src/**/*.scss",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://zorinpavel.github.io/",
   "dependencies": {
     "classnames": "^2.5.1",
     "react": "^18.3.1",
@@ -31,6 +33,7 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "eslint-plugin-simple-import-sort": "^12.1.0",
+    "gh-pages": "^6.3.0",
     "sass": "^1.83.4",
     "stylelint": "^16.13.2",
     "stylelint-config-standard-scss": "^14.0.0",
