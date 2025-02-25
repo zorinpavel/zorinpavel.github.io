@@ -1,0 +1,43 @@
+{
+  "name": "softswiss",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "set NODE_ENV=develop && env-cmd -f .env.develop vite --open --cors",
+    "build:dev": "set NODE_ENV=develop && env-cmd -f .env.develop vite build",
+    "build": "vite build",
+    "preview": "vite preview --open --https --port 4000 --strictPort",
+    "tsc": "tsc",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "scss": "stylelint src/**/*.scss"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.10.0",
+    "@typescript-eslint/parser": "^7.10.0",
+    "@vitejs/plugin-basic-ssl": "^1.2.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "env-cmd": "^10.1.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "eslint-plugin-simple-import-sort": "^12.1.0",
+    "sass": "^1.83.4",
+    "stylelint": "^16.13.2",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-no-unsupported-browser-features": "^8.0.2",
+    "stylelint-order": "^6.0.4",
+    "stylelint-selector-bem-pattern": "^4.0.1",
+    "typescript": "^5.4.1",
+    "vite": "^6.0.11"
+  }
+}

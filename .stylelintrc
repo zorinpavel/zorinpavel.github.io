@@ -1,0 +1,49 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss"
+  ],
+  "plugins": [
+    "stylelint-no-unsupported-browser-features",
+    "stylelint-order",
+    "stylelint-selector-bem-pattern"
+  ],
+  "rules": {
+    "declaration-block-no-redundant-longhand-properties": null,
+    "selector-class-pattern": null,
+    "selector-id-pattern": null,
+    "scss/double-slash-comment-empty-line-before": null,
+    "scss/double-slash-comment-whitespace-inside": null,
+    "no-empty-source": null,
+    "alpha-value-notation": "number",
+    "no-descending-specificity": null,
+    "order/order": [
+      "dollar-variables",
+      {
+        "type": "at-rule",
+        "name": "extend"
+      },
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "include"
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "hasBlock": true
+      },
+      "at-rules",
+      "rules"
+    ],
+    "order/properties-alphabetical-order": false,
+    "plugin/no-unsupported-browser-features": [
+      null,
+      {
+        "severity": "warning",
+        "ignorePartialSupport": true
+      }
+    ],
+    "scss/comment-no-empty": null,
+    "selector-pseudo-element-no-unknown": null
+  }
+}
